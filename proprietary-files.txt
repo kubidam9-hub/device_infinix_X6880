@@ -1630,8 +1630,8 @@ vendor/etc/VideoLog_dynamic.xml
 vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib64/arm.graphics-V1-ndk_platform.so
 
 # Display (Mali) - from XT2513-1_KANSAS_OPENLA_15_V1VK35.22-125_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC
-vendor/lib64/egl/mt6835/libGLES_mali.so:vendor/lib64/egl/mt6789/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so|0d7ee65504a0bedc798b900cbb96f41b6b88b038
-vendor/lib64/hw/mt6835/vulkan.mali.so:vendor/lib64/hw/mt6789/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so|a85b914d28400ecf0e9532840e57e844cc13739a
+vendor/lib64/egl/mt6835/libGLES_mali.so:vendor/lib64/egl/mt6789/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so|9322b1767d05446898f3d8544c301d8042de292f
+vendor/lib64/hw/mt6835/vulkan.mali.so:vendor/lib64/hw/mt6789/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so|09d37ade34b1b40c70301bc7f9aa20b12a22ed3f
 vendor/etc/gralloc/cam.xml|f6cb02f33dd9f1aadb0a829281ad488729ea2106
 vendor/etc/gralloc/dpu.xml|5be2bc6cd7c0ca4de485db54f0e06ccb9f57ab0c
 vendor/etc/gralloc/dpu_aeu.xml|94355caa28c4d7609a53db8ed9ba179370c991b5
@@ -1920,15 +1920,15 @@ product/pangu/system/etc/permissions/com.tms.cosdl.xml:system/etc/permissions/co
 product/pangu/system/etc/permissions/com.tms.nfc.xml:system/etc/permissions/com.tms.nfc.xml|3d9430f5be445c69532ca8f917a3b0f2fe098136
 product/pangu/system/framework/com.tms.cosdl.jar:system/framework/com.tms.cosdl.jar|7b325bfc7db0ba342a49f2e0ece0c037611e31c4
 product/pangu/system/framework/com.tms.nfc.jar:system/framework/com.tms.nfc.jar|ddb81ff1bf9b4289dd20018c6f5beb12b224f698
-odm/bin/hw/android.hardware.nfc@1.2-service-tms:vendor/bin/hw/android.hardware.nfc@1.2-service-tms|1e7ed2a77b4cd5626bfa239f158545405fc170bd
-odm/etc/init/android.hardware.nfc@1.2-service-tms.rc:vendor/etc/init/android.hardware.nfc@1.2-service-tms.rc|8564a736a4f0c35f46be0c012e2613d63b68ccb0
-odm/lib64/7816-3-T1.so:vendor/lib64/7816-3-T1.so|535371d4a17aa0ee58260abb6e673ba39e865d8b
-odm/lib64/nfc_nci.thn31nfc.tms.so:vendor/lib64/nfc_nci.thn31nfc.tms.so|d84f5a3f26d7a83c2190a331db24347d23934f61|d84f5a3f26d7a83c2190a331db24347d23934f61
-odm/lib64/tms-cos-dl-common.so:vendor/lib64/tms-cos-dl-common.so|deccaadff7941b4b585ca588923e9ed19cde6b63
-odm/lib64/tms-cos-dl-ree.so:vendor/lib64/tms-cos-dl-ree.so|e25df5092c44101d1a4482115cb794a0884a0594
-odm/lib64/tms-utils.so:vendor/lib64/tms-utils.so|43f7ce9013b6c6077692be56211a7875f959c037|43f7ce9013b6c6077692be56211a7875f959c037
+odm/bin/hw/android.hardware.nfc@1.2-service-tms:vendor/bin/hw/android.hardware.nfc@1.2-service-tms|dba94e8592c37c78223b60409fd07db6263ef330
+odm/etc/init/android.hardware.nfc@1.2-service-tms.rc:vendor/etc/init/android.hardware.nfc@1.2-service-tms.rc|e906d99eeb5508a3d78d99b39feb0f8291c9ca25
+odm/lib64/7816-3-T1.so:vendor/lib64/7816-3-T1.so|ff637a621f8cf90d19e170b36611f94bb32faecb
+odm/lib64/nfc_nci.thn31nfc.tms.so:vendor/lib64/nfc_nci.thn31nfc.tms.so|8d77331b48d2855b580b0e7c4aefa0595aa34eb4|8d77331b48d2855b580b0e7c4aefa0595aa34eb4
+odm/lib64/tms-cos-dl-common.so:vendor/lib64/tms-cos-dl-common.so|2533d03015c51022b0198bb185daff76f050b29d
+odm/lib64/tms-cos-dl-ree.so:vendor/lib64/tms-cos-dl-ree.so|20243f24b03900c8f8f0e9e49163f3a8f005dc98
+odm/lib64/tms-utils.so:vendor/lib64/tms-utils.so|6ccf5883907d873c5b4d64190fe7e9ccba88a476|6ccf5883907d873c5b4d64190fe7e9ccba88a476
 vendor/lib64/vendor.tms.nfc-V1-ndk.so|f1f2e67f8cb605bf06af2d1c48c76492237b6d1f
-vendor/lib64/vendor.tms.tmsnfc@1.0.so|4310ea6e30c38c33d222bf23cacaef41cdd2d864
+vendor/lib64/vendor.tms.tmsnfc@1.0.so|70f810009c6aef4e0af07019471663540678017b
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
@@ -2159,20 +2159,8 @@ vendor/etc/thermal/disable_throttling.conf
 vendor/etc/thermal/thermal.conf
 vendor/etc/thermal/thermal_mtbf.conf
 vendor/etc/thermal/thermal_policy_00.conf
-vendor/etc/thermal/thermal_policy_01.conf
 vendor/etc/thermal/thermal_policy_02.conf
-vendor/etc/thermal/thermal_policy_03.conf
-vendor/etc/thermal/thermal_policy_04.conf
-vendor/etc/thermal/thermal_policy_05.conf
-vendor/etc/thermal/thermal_policy_06.conf
-vendor/etc/thermal/thermal_policy_07.conf
 vendor/etc/thermal/thermal_policy_08.conf
-vendor/etc/thermal/thermal_policy_09.conf
-vendor/etc/thermal/thermal_policy_10.conf
-vendor/etc/thermal/thermal_policy_11.conf
-vendor/etc/thermal/thermal_policy_12.conf
-vendor/etc/thermal/thermal_policy_13.conf
-vendor/etc/thermal/thermal_policy_14.conf
 
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
